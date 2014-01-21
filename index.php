@@ -45,20 +45,6 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/jquery-1.8.3.min.js"/></script>
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/core.js"/></script>
-<script type="text/javascript">
-$(document).ready(function() {
-	$("body").css("display", "none"); 
-	$("body").fadeIn(500); 
-	$("a:not([href^='#'])").click(function(event){ 
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(500, redirectPage); 
-	});
-	function redirectPage() {
-		window.location = linkLocation;
-	}
-});
-</script>
 </head>
 
 <body>
