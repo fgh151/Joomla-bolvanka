@@ -21,16 +21,20 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <meta name="msapplication-wide310x150logo" content="wide.png"/>
 <meta name="msapplication-square310x310logo" content="large.png"/>
 <?php $this->_generator = 'OpenITStudio';?>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
 <jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/user.css"  type="text/css" media="screen"/>
-
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/media-queries.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/<?php echo $this->template ;?>/css/style.less.css" type="text/css" />
 
 
 <!--[if IE]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <!--[if lte opera 6, 7, 8, 9, 10]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/opera.css" rel="stylesheet" type="text/css" />
