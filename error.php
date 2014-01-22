@@ -12,10 +12,6 @@ $showRightColumn = 0;
 $showleft = 0;
 $showbottom = 0;
 
-// get params
-$color			= $params->get('templatecolor');
-$navposition	= $params->get('navposition');
-
 //get language and direction
 $doc = JFactory::getDocument();
 $this->language = $doc->language;
@@ -35,10 +31,10 @@ $this->direction = $doc->direction;
 
 
 		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/position.css" type="text/css" media="screen,projection" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/layout.css" type="text/css" media="screen,projection" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/print.css" type="text/css" media="Print" />
-		<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/<?php echo htmlspecialchars($color); ?>.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/user.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/media-queries.css"  type="text/css" media="screen"/>
 <?php
 	$files = JHtml::_('stylesheet', 'templates/'.$this->template.'/css/general.css', null, false, true);
 	if ($files):
@@ -93,30 +89,10 @@ $this->direction = $doc->direction;
 
 		<div id="header">
 
-					<div class="logoheader">
-						<?php
-								$params = JFactory::getApplication()->getTemplate(true)->params;
-								$logo =  $params->get('logo');
-							?>
-
-							<?php jimport( 'joomla.application.module.helper' ); ?>
-
-						 <h1 id="logo">
-
-                                        <?php if ($logo): ?>
-                                        <img src="<?php echo $this->baseurl ?>/<?php echo htmlspecialchars($logo); ?>"  alt="<?php echo htmlspecialchars($params->get('sitetitle'));?>" />
-                                        <?php endif;?>
-                                        <?php if (!$logo ): ?>
-                                        <?php echo htmlspecialchars($params->get('sitetitle'));?>
-                                        <?php endif; ?>
-                                        <span class="header1">
-                                        <?php echo htmlspecialchars($params->get('sitedescription'));?>
-                                        </span></h1>
-					</div><!-- end logoheader -->
+	
 
 						<ul class="skiplinks">
-							<li><a href="#wrapper2" class="u2"><?php echo JText::_('TPL_BEEZ2_SKIP_TO_ERROR_CONTENT'); ?></a></li>
-							<li><a href="#nav" class="u2"><?php echo JText::_('TPL_BEEZ2_ERROR_JUMP_TO_NAV'); ?></a></li>
+
 
 						</ul>
 						<div id="line"></div>
@@ -130,7 +106,7 @@ $this->direction = $doc->direction;
 
 							<div class="left1" id="nav">
 
-				<h2 class="unseen"><?php echo JText::_('TPL_BEEZ2_NAVIGATION'); ?></h2>
+				<h2 class="unseen"></h2>
 											<?php $module = JModuleHelper::getModule( 'menu' );
 											echo JModuleHelper::renderModule( $module);	?>
 
@@ -177,7 +153,7 @@ $this->direction = $doc->direction;
 
                                 <div id="footer">
                                         <p>
-                                                <?php echo JText::_('TPL_BEEZ2_POWERED_BY');?> <a href="http://www.joomla.org/">Joomla!&#174;</a>
+
                                         </p>
 
                                 </div><!-- end footer -->
@@ -197,6 +173,10 @@ if (!isset($this->error)) {
 }
 ?>
 	<link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/system/css/error.css" type="text/css" />
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/user.css"  type="text/css" media="screen"/>
+<link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/media-queries.css"  type="text/css" media="screen"/>
 </head>
 <body>
 	<div class="error">
