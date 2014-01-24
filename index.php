@@ -21,7 +21,8 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <meta name="msapplication-wide310x150logo" content="wide.png"/>
 <meta name="msapplication-square310x310logo" content="large.png"/>
 <?php $this->_generator = 'OpenITStudio';?>
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
 <jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
