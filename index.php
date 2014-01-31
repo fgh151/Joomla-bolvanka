@@ -30,6 +30,11 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/media-queries.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/<?php echo $this->template ;?>/css/style.less.css" type="text/css" />
 
+<?php //rmm section ?>
+<link rel="stylesheet" href="<?php echo $this->baseurl ;?>/templates/<?php echo $this->template ;?>/css/rmm.css" type="text/css" />
+<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/rmm.js"/></script>
+<?php //end rmm ?>
+
 
 <!--[if IE]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet" type="text/css" />
