@@ -248,3 +248,35 @@ blockquote{
 	font-style:italic;
 }
 
+/*---------------------------------responsive blog ------------------------*/
+
+@media screen and (max-width: 980px) {
+	.items-leading{
+		width:100% !important;
+	}
+
+	.items-row > .item{
+		float:none !important;
+		width:100% !important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.items-leading{
+		width:100% !important;
+	}
+	.items-row > .item{
+		float:none !important;
+		width:100% !important;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.items-leading{
+		width:100% !important;
+	}
+	.items-row > .item{
+		float:none !important;
+		width:100% !important;
+	}
+}
