@@ -12,6 +12,10 @@ a{
 	color:#555555;
 }
 
+input{
+	outline:none;
+}
+
 .clear{
 	clear:both;
 }
