@@ -35,6 +35,12 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/rmm.js"/></script>
 <?php //end rmm ?>
 
+<!--[if lt IE 9]>
+ <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/html5shiv.js" type="text/javascript"></script>
+ <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/respond.min.js" type="text/javascript"></script>
+<![endif]-->
+
+
 
 <!--[if IE]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet" type="text/css" />
