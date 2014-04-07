@@ -16,6 +16,10 @@ input{
 	outline:none;
 }
 
+input[type="text"]:focus {
+	outline: none;
+}
+
 .clear{
 	clear:both;
 	width:0!important;
