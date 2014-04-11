@@ -23,7 +23,6 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <?php $this->_generator = 'OpenITStudio';?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/user.css"  type="text/css" media="screen"/>
@@ -57,6 +56,7 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/jquery-1.8.3.min.js"/></script>
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/core.js"/></script>
+<jdoc:include type="head" />
 </head>
 
 <body>
