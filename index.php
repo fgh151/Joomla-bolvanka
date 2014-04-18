@@ -39,14 +39,23 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
  <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/respond.min.js" type="text/javascript"></script>
 <![endif]-->
 
-
-
 <!--[if IE]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<!--[if lt IE 9]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+<!--[if lt IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+
 <!--[if lte opera 6, 7, 8, 9, 10]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/opera.css" rel="stylesheet" type="text/css" />
 <![endif]-->
