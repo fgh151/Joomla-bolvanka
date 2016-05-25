@@ -12,18 +12,8 @@ a{
 	color:#555555;
 }
 
-input{
-	outline:none;
-}
-
-input[type="text"]:focus {
-	outline: none;
-}
-
 .clear{
 	clear:both;
-	width:0!important;
-	height:0!important;
 }
 
 .left{

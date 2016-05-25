@@ -23,6 +23,7 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <?php $this->_generator = 'OpenITStudio';?>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
+<jdoc:include type="head" />
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/normalize.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/main.css"  type="text/css" media="screen"/>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/user.css"  type="text/css" media="screen"/>
@@ -34,10 +35,6 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/rmm.js"/></script>
 <?php //end rmm ?>
 
-<!--[if lt IE 9]>
- <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/html5shiv.js" type="text/javascript"></script>
- <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/respond.min.js" type="text/javascript"></script>
-<![endif]-->
 
 <!--[if IE]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet" type="text/css" />
@@ -45,19 +42,6 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
-<!--[if lt IE 9]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script>
-<![endif]-->
-<!--[if lt IE 8]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
-<![endif]-->
-<!--[if lt IE 7]>
-<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
-<![endif]-->
-
 <!--[if lte opera 6, 7, 8, 9, 10]>
 	<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/opera.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -67,7 +51,6 @@ file_put_contents(YOURBASEPATH .DS.'css/style.less.css', $less->parse());
 
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/jquery-1.8.3.min.js"/></script>
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/core.js"/></script>
-<jdoc:include type="head" />
 </head>
 
 <body>

@@ -65,7 +65,6 @@ $this->direction = $doc->direction;
 
 <style type="text/css">
 			<!--
-			
 			#errorboxbody
 			{margin:30px}
 			#errorboxbody h2
@@ -77,7 +76,6 @@ $this->direction = $doc->direction;
 			margin-top:20px;
 			border:solid 1px #ddd
 			}
-			*{text-align:center;}
 			-->
 </style>
 
@@ -109,7 +107,7 @@ $this->direction = $doc->direction;
 							<div class="left1" id="nav">
 
 				<h2 class="unseen"></h2>
-											<?php $module = JModuleHelper::getModule( 'menu', 'mainmenu' );
+											<?php $module = JModuleHelper::getModule( 'menu' );
 											echo JModuleHelper::renderModule( $module);	?>
 
 							</div>
@@ -121,7 +119,7 @@ $this->direction = $doc->direction;
 								<?php echo JText::_('JERROR_LAYOUT_PAGE_NOT_FOUND'); ?></h2>
 								<?php if (JModuleHelper::getModule( 'search' )) : ?>
 									<div id="searchbox">
-									
+									<h3 class="unseen"><?php echo JText::_('TPL_BEEZ2_SEARCH'); ?></h3>
 									<p><?php echo JText::_('JERROR_LAYOUT_SEARCH'); ?></p>
 									<?php $module = JModuleHelper::getModule( 'search' );
 									echo JModuleHelper::renderModule( $module);	?>
@@ -135,7 +133,7 @@ $this->direction = $doc->direction;
 
 						<h2>#<?php echo $this->error->getCode() ;?>&nbsp;<?php echo $this->error->getMessage();?></h2> <br />
 
-<img src="/templates/iptelefon/images/404.jpg" />
+
 			</div><!-- end wrapper -->
 		</div><!-- end contentarea -->
 
